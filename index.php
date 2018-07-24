@@ -31,19 +31,30 @@
 		  <h1>Your home community</h1> 
 	
 		</div>
-		<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
-			<div class="form-group">
-				<label for="exampleFormControlInput1">Email:</label>
-				<input name="email"> <!--id="datepicker-->
-			</div>
+		<div class="container">
+		<div class="row">
+		<?php
+		//var_dump($row = mysqli_fetch_assoc($result));
+		while ($row = mysqli_fetch_assoc($result)) { ?>
+				<div class="card float-left center-block p-4 col-sm-12 col-md-6" style="width: 19rem;">
+			  <img class="card-img-top" src="<?php echo $row['img_link'] ?>" alt="Card image cap">
+			  
+				  <div class="card-body">
+				    <h5 class="card-title"><?php //echo $row['author_id']. " " . $row['name'] ?></h5>
+				    <ul class="list-unstyled">
+				    	<li><em>Resolution: </em><?php echo $row['model'] ?></li>
+				    	<li><em>Author: </em><?php echo $row['latitude'] ?></li>
+				    	<li><em>Status: </em><?php echo $row['longitude'] ?></li>
+				    	
+				    	<li><a href="rent.php" class="btn btn-primary">Book me!</a></li>
+				    </ul>
+				  </div>
+				</div>
+				<?php
+		}
 
-			<div class="form-group">
-				<label for="exampleFormControlInput1">Password:</label>
-				<input class="form-control" name="pass">
-			</div>
-			
-			<button type="submit" class="btn btn-block btn-primary" name="btn_login">Login</button>
-		</form>
+		?>
+		</div>
 		
 	</main>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
