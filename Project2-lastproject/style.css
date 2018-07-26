@@ -1,0 +1,57 @@
+.jumbotron {
+  background: url("img/dmitri-popov-69420-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px;
+}
+.shadow_black {
+  text-shadow: 2px 2px 2px #fff;
+}
+.shadow_white {
+  text-shadow: 1px 2px 4px #000;
+}
+.jumbotron:hover {
+  background: linear-gradient(rgba(255,255, 255, 0.45),rgba(255, 255, 255, 0.45)),
+    url("img/dmitri-popov-69420-unsplash.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+
+}
+.jumbo-headline {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 20px;
+  color: white;
+}
+.jumbo-headline:hover {
+  color: black;
+}
+.container {
+  width: 50%;
+  background: white;
+  position: relative;
+  top: -3rem;
+}
+.landingpage-container {
+  margin: auto;
+}
+
+.truncate {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  -o-ellipsis-lastline: 5;
+}
+.card {
+    width: 200px;
+    margin: 0 1rem;
+}

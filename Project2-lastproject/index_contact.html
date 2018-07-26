@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form - HomeOwners association</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous"><!-- for the heart icon in the footer -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="index.php">HomeOwners Association</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+	  </button><!-- navbar -->
+		  <div class="collapse navbar-collapse" id="navbarText">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="register.php">Register</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="bio.php">Who we are</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+	</header>
+  <section>
+  	<main>
+  		<div class="jumbotron jumbotron-fluid">
+        <div class="jumbo-headline">
+          <h1 class="display-4">Welcome to</h1>
+    		  <h2>your home community</h2>
+          <a class="btn btn-primary" href="index_contact.html"> ping us a message </a>
+        </div>
+      </div>
+
+	<div id="page-wrap">
+		<div id="contact-area">
+
+			<form method="post" action="contactengine.php">
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" id="Name" />
+
+				<label for="City">House:</label>
+				<input type="text" name="City" id="City" />
+
+				<label for="City">Apartment:</label>
+				<input type="text" name="City" id="City" />
+
+				<label for="Email">Email:</label>
+				<input type="text" name="Email" id="Email" />
+
+				<label for="Message">Message:</label><br />
+				<textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+				<input type="submit" name="submit" value="Submit" class="submit-button" />
+			</form>
+
+
+
+		</div>
+
+	</div>
+</main>
+</section>
+
+</body>
+
+</html>
