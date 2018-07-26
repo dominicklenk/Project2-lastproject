@@ -1,3 +1,6 @@
+li {
+  list-style: none;
+}
 .jumbotron {
   background: url("img/dmitri-popov-69420-unsplash.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -35,7 +38,7 @@
   color: black;
 }
 .container {
-  width: 50%;
+  width: 100%;
   background: white;
   position: relative;
   top: -3rem;
@@ -54,4 +57,12 @@
 .card {
     width: 200px;
     margin: 0 1rem;
+}
+.adminImg {
+  width:50%;
+}
+.adminPanel {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
